@@ -1,0 +1,10 @@
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn-transparent{
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
