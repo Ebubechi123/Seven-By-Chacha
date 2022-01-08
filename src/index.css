@@ -1,6 +1,5 @@
-
-:root{
-  --main-color:pink;
+:root {
+  --main-color: pink;
 }
 
 body {
@@ -10,9 +9,32 @@ body {
   width: 100%;
   min-height: 100vh;
   height: 100vh;
+  background: rgba(3, 3, 3, 0.918);
+  color: white;
 }
 
-#root{
+#root {
   width: 100%;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-1 {
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
 }

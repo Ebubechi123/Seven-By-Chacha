@@ -1,23 +1,29 @@
-import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {faAlignRight} from "@fortawesome/free-solid-svg-icons";
-import  "./Nav.css";
-const Nav = () => {
-    library.add(faAlignRight)
-    return ( 
-        <nav>
-        <div className="nav-logo">
-          <h2>Chacha</h2>
-        </div>
+import React from "react";
+import { CartIcon } from "../Icons/Icon";
 
-        <div className="nav-link">
-          <ul className="nav-links">
-             <li><FontAwesomeIcon icon="align-right" /></li>
-          </ul>
-        </div>
-      </nav>
-     );
-}
- 
+import "./Nav.css";
+const Nav = ({ className, style }) => {
+  return (
+    <nav style={style} className={className}>
+      <div className="nav-logo">
+        <h2>Chacha</h2>
+      </div>
+
+      <div className="nav-link">
+        <ul className="nav-links">
+          <li>Collections</li>
+          <li>About</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div className="cart">
+        <li>
+          {" "}
+          <CartIcon style={{ color: "white" }} />{" "}
+        </li>
+      </div>
+    </nav>
+  );
+};
+
 export default Nav;

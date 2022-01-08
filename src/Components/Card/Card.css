@@ -1,0 +1,30 @@
+.card{
+    max-width: 590px;
+    width: 200px;
+    max-height: 590px;
+    height: 120px;
+    flex-basis: 30%;
+    padding: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 6px rgb(230, 229, 229);
+    color: white;
+    cursor: pointer;
+}
+
+.green{
+    background: rgb(2, 220, 228);
+}
+
+.yellow{
+    background: rgb(122, 0, 153);
+}
+
+.black{
+    background: rgb(226, 4, 97);
+}
+
+.blue{
+    background: rgb(2, 116, 68);
+}

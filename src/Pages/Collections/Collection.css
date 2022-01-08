@@ -1,0 +1,23 @@
+
+.collection-section{
+    width: 100%;
+    height: inherit;
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-title{
+    text-align: center;
+}
+
+.collection-cards{
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

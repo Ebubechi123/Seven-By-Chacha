@@ -1,24 +1,37 @@
-import React from 'react';
-import Button from '../../Components/Button/Button';
-import Nav from '../../Components/Nav/Nav';
-import  "./Home.css";
-import  "./Home.mediaquery.css";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import Button from "../../Components/Button/Button";
+import { BackgroundProvider } from "../../StateMangement/BackgroundColor";
+import Nav from "../../Components/Nav/Nav";
+import Img from "../../Assets/Images/img2.jpg";
+import "./Home.css";
+import "./Home.mediaquery.css";
 const Home = () => {
-    return ( 
-        <div className="home-container">
-            
-            <Nav />
-            
-            <div className="description">
-                <h2> seven by chacha </h2>
+  const [color, changeColor] = useContext(BackgroundProvider);
+  const ColorHandler = (color) => {
+    changeColor(color);
+  };
 
-                <div className="description-btn">
-                    <Button className="btn-transparent">Explore Collection</Button>
-                </div>
+  return (
+    <>
+      <div className="hero">
+        <div className="row">
+          <div className="col-1">
+            <div className="img">
+              <div className="img-box"></div>
+              <img src={Img} alt="" />
             </div>
-
+          </div>
+          <div className="col-1">
+          <div className="img">
+              <div className="img-box"></div>
+              <img src={Img} alt="" />
+            </div>
+          </div>
         </div>
-     );
-}
- 
+      </div>
+    </>
+  );
+};
+
 export default Home;
